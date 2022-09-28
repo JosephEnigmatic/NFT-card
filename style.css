@@ -28,6 +28,7 @@ body{
     line-height: 1.5;
     max-height: 100vh;
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
