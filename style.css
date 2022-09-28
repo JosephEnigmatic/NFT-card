@@ -1,0 +1,142 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: var(--main-BG);
+    color: hsl(0, 0%, 100%, 60%);
+    padding: 1.5rem 3rem;
+    line-height: 1.5;
+    max-height: 100vh;
+    font-size: 16px;
+}
+
+.container{
+    background-color: var(--card-BG);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.container h3{
+    color: var(--White);
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+
+.container h3:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.container p{
+    font-weight: 300;
+    padding: 0.3rem 0;
+}
+
+.container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.container ul li{
+    display: flex;
+    align-items: center;
+}
+
+.container ul li img{
+    margin-right: 0.4rem;
+}
+
+.container ul li:first-child{
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.container span{
+    color: var(--White);
+}
+
+.container span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1.5rem;
+}
+
+.footer img{
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right: 1rem;
+}
+
+.text{
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1rem;
+}
+
+.main-img{
+    position: relative;
+}
+
+.main-img div{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: var(--Cyan);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.main-img div:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.main-img div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img img{
+    border-radius: 0.5rem;
+}
+
+.attribution { 
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
