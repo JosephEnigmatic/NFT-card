@@ -140,3 +140,10 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 500px) {
+    .container{
+        margin: 0 auto;
+        width: 400px;
+    }
+}
